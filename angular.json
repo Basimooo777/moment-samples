@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "moment-sample"
+    }
+  },
+  "defaultProject": "moment-sample",
+  "cli": {
+    "analytics": "52f3ea20-ba94-4aca-8fc0-28bbaf165028"
+  }
 }
