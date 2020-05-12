@@ -1,21 +1,19 @@
-<p>home works!</p>
-
-myDate: <label>
-{{myDate}}
-  </label>
-  <br />
-  myDate1:
-  <label>
-    {{myDate1}}
-      </label>
-      <br />
-      myDate2:
-      <label>
-        {{myDate2}}
-          </label>
-          <br />
-          today:
-          <label>
-            {{today}}
-              </label>
-              <br />
+<form #f="ngForm" (ngSubmit)="convertDate(f)" novalidate>
+  <table>
+    <tr>
+      <td> Need Date (dd-mm-yyyy) </td>
+      <td> <input name="date" ngModel #date="ngModel"/> </td>
+      <td> <button>Convert Date</button> </td>
+    </tr>
+    <tr>
+      <td> Result </td>
+      <td> {{ convertedDate }} </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td> Thanks ! </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
